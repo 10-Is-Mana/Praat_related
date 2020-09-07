@@ -13,10 +13,11 @@ Csv file should follow this format.
 |  ID  |  soundfile name  |  target  |  gloss |  folder name |
 
 The directly is nested, for example, in this format
+```
 main --- speaker A - .wav and .textgrids
       |- speaker B - .wav and .textgrids
       |- speaker C - .wav and .textgrids
-    
+```
 
 ## How to Use the program
 - prepare csv file as required
@@ -25,13 +26,12 @@ main --- speaker A - .wav and .textgrids
 - install praat-textgrids package via `pip install praat-textgrids` or `pip3 install praat-textgrids`
 - type `python3 praat_edit.py`
 
-      python will ask : `What is the path of the csv file?`
+      ```
+      python will ask : What is the path of the csv file?
+      python will ask : Where are the files that need reprocessing?
+      python will ask : Where do you want to save the existing TextGrid files?
+      ```
       
-      python will ask : `Where are the files that need reprocessing?`
-      
-      python will ask : `Where do you want to save the existing TextGrid files?`
-      
-
 ## Copyright
 created by Mana ASHIDA, 10suism.ashida@gmail.com
 
