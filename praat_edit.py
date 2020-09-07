@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 # created by Mana ASHIDA, 03-09-2020, ver.1.1
-# ver 1.1 fix a bit.
 
 import textgrids
 import csv
-import sys
 
 """
 This program reprocess the existing TextGrids and generate TextGrids which have the following tiers:
@@ -38,8 +36,6 @@ def main(csv_col, path_in, path_out):
     f_in.write(f'{path_out}/{filename}')
 
     max = f_in.xmax
-    # key = list(f_in.keys())
-    # max = f_in[key[1]][0].xmax
 
     for _ in range(len(f_in)):
         pop(f_in)
@@ -53,8 +49,8 @@ def main(csv_col, path_in, path_out):
     f_in.write(filepath)
 
 # reading csv file (from excel, par sheet)
-print("What is the name of the csv file?")
-path = f'{input()}'
+print("What is the path of the csv file?")
+path = input()
 
 with open(path) as f:
     csv_in = [line for line in csv.reader(f)]
