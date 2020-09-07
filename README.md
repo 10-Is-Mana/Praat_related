@@ -1,6 +1,8 @@
 # Praat_related
+1. Praat_edit.py
+2. Praat_extract.py
 
-## Expected Use case
+## Expected Use Case
 This script is useful for the situation that you want to edit the existing TextGrids Tier information (tier name, tier text). The pre-edit version of the TextGrids are saved into the folder you indicated via the dialog with Python. Editing Tier includes deleting/adding Tiers as well. 
 
 
@@ -10,27 +12,25 @@ Csv file should follow this format.
 | ---- | ---- | ---- | ---- | ---- | ---- |
 |  ID  |  filename  |  text  |  gloss |  foldername |
 
-the directly is nested, for example, in this format
+The directly is nested, for example, in this format
 main --- speaker A - .wav and .textgrids
       |- speaker B - .wav and .textgrids
       |- speaker C - .wav and .textgrids
     
 
-context, 
-re-create praat textgrids according to the information from csv file
+## How to Use the program
+- prepare csv file as required
+- download & save the program in the preferred location
+- change direclty to the saved location via command `cd`
+- install praat-textgrids package via `pip install praat-textgrids` or `pip3 install praat-textgrids`
+- type `python3 praat_edit.py` 
+then python will ask : `What is the path of the csv file?`
+then python will ask : `Where are the files that need reprocessing?`
+then python will ask : `Where do you want to save the existing TextGrid files?`
 
-how to use,
-prepare csv file
-install praat-textgrids package via pip install
-type python3 [] 
-then python will ask : 
-then python will ask : 
-then python will ask : 
+## Copyright
+created by Mana ASHIDA, 10suism.ashida@gmail.com
+`praat-textgrids` package[https://github.com/Legisign/Praat-textgrids] is a free software.
 
-copyright
-created by Mana ASHIDA
-note: the praat-textgrids package is in XXX licensce.
-
-support
-This script is a part of the project at Asia-africa institute, which helps automatize re-formatting existing files for publishing.
-
+## Support
+This script is supported by the project at ReNeLDA, "Establishment of a Research Network for Exploring the Linguistic Diversity and Linguistic Dynamism in Africa."
