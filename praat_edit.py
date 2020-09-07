@@ -7,9 +7,9 @@ import csv
 """
 This program reprocess the existing TextGrids and generate TextGrids which have the following tiers:
 1 segment (leave empty)
-2 target (column F) = [5]
-3 gloss (column G) = [6]
-4 sentence (column E) = [4]
+2 target (column C) = [2]
+3 gloss (column D) = [3]
+4 sentence (column E) = [1]
 5 archive id (column A) = [0]
 """
 
@@ -29,8 +29,8 @@ def pop(f_in):
 
 # main function, input : one column of csv file
 def main(csv_col, path_in, path_out):
-    filename = csv_col[4].replace(".wav", ".TextGrid")
-    filepath = f'{path_in}/{csv_col[7]}/{filename}'
+    filename = csv_col[1].replace(".wav", ".TextGrid")
+    filepath = f'{path_in}/{csv_col[4]}/{filename}'
 
     f_in = textgrids.TextGrid(filepath)
     f_in.write(f'{path_out}/{filename}')
@@ -41,9 +41,9 @@ def main(csv_col, path_in, path_out):
         pop(f_in)
 
     add_tiers("segment", f_in, max, "")
-    add_tiers("target", f_in, max, csv_col[5])
-    add_tiers("gloss", f_in, max, csv_col[6])
-    add_tiers("sentence", f_in, max, csv_col[4])
+    add_tiers("target", f_in, max, csv_col[2])
+    add_tiers("gloss", f_in, max, csv_col[3])
+    add_tiers("sentence", f_in, max, csv_col[1])
     add_tiers("archive id", f_in, max, csv_col[0])
 
     f_in.write(filepath)
