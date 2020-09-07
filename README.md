@@ -34,7 +34,7 @@ main --- speaker A - .wav and .textgrids
 ## Copyright
 created by Mana ASHIDA, 10suism.ashida@gmail.com
 
-`praat-textgrids` package[https://github.com/Legisign/Praat-textgrids] is a free software.
+[`praat-textgrids` package](https://github.com/Legisign/Praat-textgrids) is a free software.
 
 ## Support
 This script is supported by the project at ReNeLDA, "Establishment of a Research Network for Exploring the Linguistic Diversity and Linguistic Dynamism in Africa."
