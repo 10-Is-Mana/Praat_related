@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# created by Mana ASHIDA, 11-09-2020, ver.1.1
+# created by Mana ASHIDA, 12-09-2020, ver.1.0
 
 import glob
 import csv
