@@ -4,6 +4,7 @@
 import glob
 import csv
 import textgrids
+from tqdm import tqdm
 
 print("What is the path to the folder containing target TextGrids?")
 path_in = input()
@@ -12,7 +13,7 @@ paths = glob.glob(path_in+"/*.TextGrid")
 f = open(path_in+"/TierInfos.csv", "w")
 writer = csv.writer(f)
 
-for path in sorted(paths):
+for path in tqdm(sorted(paths)):
     f_in = textgrids.TextGrid(path)
     info = []
     info.append(path.split("/")[-1])
