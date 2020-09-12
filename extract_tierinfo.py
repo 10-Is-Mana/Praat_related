@@ -20,7 +20,8 @@ for path in tqdm(sorted(paths)):
     for elem in f_in:
         interval = []
         for seg in f_in[elem]:
-            interval.append(seg.text)
+            if seg.text != "":
+                interval.append(seg.text)
         info.append(" ".join(interval))
     writer.writerow(info)
 
