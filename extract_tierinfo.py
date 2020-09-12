@@ -10,7 +10,7 @@ print("What is the path to the folder containing target TextGrids?")
 path_in = input()
 paths = glob.glob(path_in+"/*.TextGrid")
 
-f = open(path_in+"/TierInfos.csv", "w")
+f = open(path_in+"/0_TierInfos.csv", "w")
 writer = csv.writer(f)
 
 for path in tqdm(sorted(paths)):
@@ -26,4 +26,4 @@ for path in tqdm(sorted(paths)):
     writer.writerow(info)
 
 f.close()
-print("TierInfos.csv is generated in "+path_in)
+print("0_TierInfos.csv is generated in "+path_in)
