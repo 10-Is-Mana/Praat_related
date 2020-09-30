@@ -15,11 +15,12 @@
 -> This script extract duration from textgrids of files in a folder
    A csv file is generated as a result.
    
-### (3-1) praat_reprocess_v1_1.py
+### (3) plot2pdf.py
+-> This script creates a custom look of pdf files from a series of pdf files.
+   Useful when comparing repetitions of same sentences
+   
+### (4) praat_edit.py
 -> This script creates textgrids of a series of sound files in subfolders using information provided in a csv files. Sounds files must have textgrids. See below for details. Old textrids will be saved into a preassigned folder by the user.
-
-### (3-2) praat_reprocess_v1.py
--> Superseded by v1_1
 
 
 ## How to Use the program
